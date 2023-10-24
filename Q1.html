@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .container{
+            --content-bg1-color:#00b7ff;
+            --content-bg2-color:#6c757d;
+            --content-color:white;
+            --border-bg1:#00b7ff;
+            --border-bg2:#6c757d;
+        }
+        .container #one{
+            background-color: var(--content-bg1-color);
+            color: var(--content-color);
+            border: 2px solid var(--border-bg1);
+        }
+        .container #two{
+            background-color: var(--content-bg2-color);
+            color: var(--content-color);
+            border: 2px solid var(--border-bg2);
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="one">Primary Button</button>
+        <button id="two">Secondary Button</button>
+    </div>
+</body>
+</html>
